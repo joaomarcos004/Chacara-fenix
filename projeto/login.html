@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Condomínio Fênix</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Intranet - Condomínio Fênix</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="documentos.html">Documentos</a></li>
+                <li><a href="proprietarios.html">Proprietários</a></li>
+                <li><a href="fotos_mapa.html">Fotos e Mapa</a></li>
+                <li><a href="login.html">Intranet</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Login</h2>
+        <form id="loginForm" action="intranet.html" method="POST" onsubmit="return validateLogin();">
+            <label for="username">Usuário:</label>
+            <input type="text" id="username" name="username" required>
+            <label for="password">Senha:</label>
+            <input type="password" id="password" name="password" required>
+            <button type="submit">Entrar</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Condomínio Fênix. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="js/login.js"></script>
+</body>
+</html>
